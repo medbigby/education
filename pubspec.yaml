@@ -1,0 +1,132 @@
+# ============================================================
+#  CONFIGURATION pubspec.yaml
+#  Ajoutez ces sections dans votre fichier pubspec.yaml existant
+# ============================================================
+
+name: education
+description: Mini-jeu d'apprentissage de la lettre arabe ب
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+#  DÉPENDANCES
+# ============================================================
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^6.0.0
+  shared_preferences: ^2.2.2
+  image_picker: ^1.0.7
+ 
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^6.0.0
+ 
+# ============================================================
+#  CONFIGURATION ICÔNE — logo.png
+# ============================================================
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#0D47A1"
+  adaptive_icon_foreground: "assets/images/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  # ── Assets : placez vos fichiers dans ces chemins ──────────
+  assets:
+    - assets/images/classroom_normal.png      # GIF classe calme (fond normal)
+    - assets/images/classroom_celebrate.gif   # GIF classe qui fête (célébration)
+    - assets/images/classroom_waiting.gif
+    - assets/images/classroom_failed.gif     # GIF classe échec (mauvaise réponse)
+    - assets/audio/audio_intro.mp3  
+    - assets/images/lapin.png
+    - assets/images/livre.png
+    - assets/images/perroquet.png
+    - assets/images/port.png
+    - assets/images/intro.png
+    - assets/images/logo.png
+    - assets/images/classsroom_assis.png
+    - assets/images/raisin.png
+    - assets/images/telephone.png
+    - assets/images/TV.png
+    - assets/images/vache.png
+    - assets/audio/Lapin.mp3
+    - assets/audio/Livre.mp3
+    - assets/audio/perroquet.mp3
+    - assets/audio/Port.mp3
+    - assets/audio/Raisin.mp3
+    - assets/audio/Vache.mp3
+    - assets/audio/Telephone.mp3
+    - assets/audio/TV.mp3
+    - assets/audio/Ba2.mp3
+    - assets/images/classroom_main_game2.png
+    - assets/images/classroom_win.gif
+    - assets/images/classroom_lose.gif
+
+    - assets/images/1.png
+    - assets/images/2.png
+    - assets/images/3.png
+    - assets/images/4.png
+
+    # ── Enfants assis — activité 2 ────────────────────────────
+    - assets/images/enfant1assis.png
+    - assets/images/enfant2assis.png
+    - assets/images/enfant3assis.png
+    - assets/images/enfant4assis.png
+    - assets/images/enfant5assis.png
+    - assets/images/enfant6assis.png
+    - assets/images/enfant7assis.png
+    - assets/images/enfant8assis.png
+    - assets/images/enfant9assis.png
+
+
+
+
+    # ── Enfants normal — activité 2 ────────────────────────────
+    - assets/images/enfant1.png
+    - assets/images/enfant2.png
+    - assets/images/enfant3.png
+    - assets/images/enfant4.png
+    - assets/images/enfant5.png
+    - assets/images/enfant6.png
+    - assets/images/enfant7.png
+    - assets/images/enfant8.png
+    - assets/images/enfant9.png
+ 
+    # ── GIF résultat — activité 2 ─────────────────────────────
+    - assets/images/win.gif
+    - assets/images/sad.gif
+ 
+
+
+  # ── Police Amiri (si vous n'utilisez pas google_fonts) ─────
+  # fonts:
+  #   - family: Amiri
+  #     fonts:
+  #       - asset: assets/fonts/Amiri-Regular.ttf
+  #       - asset: assets/fonts/Amiri-Bold.ttf
+  #         weight: 700
+
+# ============================================================
+#  STRUCTURE DES DOSSIERS À CRÉER
+#
+#  votre_projet/
+#  ├── lib/
+#  │   └── main.dart              ← Collez le code du jeu ici
+#  ├── assets/
+#  │   ├── images/
+#  │   │   ├── classroom_normal.png
+#  │   │   └── classroom_celebrate.gif
+#  │   └── audio/
+#  │       ├── audio_intro.mp3
+#  │       └── audio_success.mp3
+#  └── pubspec.yaml
+# ============================================================
